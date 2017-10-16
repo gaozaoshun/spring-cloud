@@ -1,0 +1,17 @@
+register:
+  server:
+    ip: 127.0.0.1
+    port: 10086
+eureka:
+  client:
+    service-url:
+      #服务注册地址
+      defaultZone: http://${register.server.ip}:${register.server.port}/eureka/
+server:
+  port: 10012
+spring:
+  application:
+    name: service-heart
+
+
+
