@@ -17,7 +17,7 @@ public class BaseController {
     BaseService baseService;
 
     @RequestMapping("/test")
-    public String test(){
-        return baseService.sendHeartPackage();
+    public String test(String token){
+        return baseService.sendHeartPackage(token);
     }
 }

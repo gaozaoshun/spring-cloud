@@ -3,6 +3,7 @@ package org.demo.service;
 import org.demo.service.hystrix.BaseHystrix;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -15,5 +16,5 @@ import org.springframework.web.bind.annotation.RequestParam;
 @FeignClient(value="service-heart",fallback = BaseHystrix.class)
 public interface BaseService {
     @GetMapping("/heart")
-    String heart();
+    String heart(@RequestParam("token") String token);
 }
