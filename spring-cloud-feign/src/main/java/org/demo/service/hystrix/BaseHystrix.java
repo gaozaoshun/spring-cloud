@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 public class BaseHystrix implements BaseService{
 
     @Override
-    public String heart() {
+    public String heart(String token) {
         return "服务调用出错，已熔断！";
     }
 }

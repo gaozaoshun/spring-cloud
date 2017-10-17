@@ -14,7 +14,7 @@ public class BaseController {
     BaseService baseService;
 
     @GetMapping("/heart")
-    public String heart(){
-        return baseService.heart();
+    public String heart(String token){
+        return baseService.heart(token);
     }
 }

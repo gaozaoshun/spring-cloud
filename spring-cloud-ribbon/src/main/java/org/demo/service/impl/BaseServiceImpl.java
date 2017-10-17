@@ -15,10 +15,12 @@ public class BaseServiceImpl implements BaseService {
     RestTemplate restTemplate;
 
     @HystrixCommand(fallbackMethod = "isError")
-    public String sendHeartPackage() {
-        return restTemplate.getForObject("http://SERVICE-HEART/heart",String.class);
+    public String sendHeartPackage(String token) {
+        return restTemplate.getForObject("http://SERVICE-HEART/heart?token="+token,String.class);
     }
-    public String isError(){
+
+
+    public String isError(String token){
         return "调用API服务出错，已熔断！";
     }
 }
