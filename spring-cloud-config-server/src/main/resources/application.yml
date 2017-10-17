@@ -1,0 +1,27 @@
+server:
+  port: 10016
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          # 配置git仓库地址
+          uri: https://github.com/gaozaoshun/springCloudConfig
+          # 配置仓库路径
+          search-paths: config
+          # 配置仓库的分支
+          default-label: master
+          # 访问git仓库的用户名
+          username: 739178184@qq.com
+          # 访问git仓库的用户密码
+          password: 13556457068+qq
+eureka:
+  client:
+    service-url:
+      # 服务注册中心
+      defaultZone: http://127.0.0.1:10086/eureka/
+
+
+
