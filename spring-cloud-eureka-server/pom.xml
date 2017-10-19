@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.demo</groupId>
-	<artifactId>spring-cloud-eurka</artifactId>
+	<artifactId>spring-cloud-eureka-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
@@ -29,7 +29,6 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-eureka-server</artifactId>
 		</dependency>
-
 	</dependencies>
 
 	<dependencyManagement>
