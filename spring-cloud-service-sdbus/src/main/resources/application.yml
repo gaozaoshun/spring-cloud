@@ -1,0 +1,7 @@
+server:
+  port: 10020
+spring:
+  application:
+    name: service-sdbus
+  zipkin:
+    base-url: http://127.0.0.1:10018

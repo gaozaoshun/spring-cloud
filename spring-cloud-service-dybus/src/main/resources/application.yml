@@ -1,0 +1,8 @@
+server:
+  port: 10019
+spring:
+  zipkin:
+    base-url: http://127.0.0.1:10018
+  application:
+    name: service-dybus
+

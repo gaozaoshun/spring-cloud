@@ -24,6 +24,9 @@
         <module>spring-cloud-zuul</module>
         <module>spring-cloud-config-server</module>
         <module>spring-cloud-config-client</module>
+        <module>spring-cloud-zipkin-server</module>
+        <module>spring-cloud-service-dybus</module>
+        <module>spring-cloud-service-sdbus</module>
     </modules>
     <dependencies>
         <dependency>
@@ -47,4 +50,16 @@
             </snapshots>
         </repository>
     </repositories>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
