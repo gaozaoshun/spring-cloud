@@ -4,7 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.demo</groupId>
+<<<<<<< HEAD
 	<artifactId>spring-cloud-eurka-server</artifactId>
+=======
+	<artifactId>spring-cloud-eureka-server</artifactId>
+>>>>>>> 92cfc4934bb2b9650b47a586f4a94682585ca6b1
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
